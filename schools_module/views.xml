@@ -1,0 +1,41 @@
+<odoo>
+    <record id="view_tree_todo" model="ir.ui.view">
+        <field name="name">view.tree.school</field>
+        <field name="model">school.module</field>
+        <field name="arch" type="xml">
+            <tree>
+                    <field name="name"/>
+                    <field name="adress"/>
+                    <field name="director"/>
+                    <field name="students"/>
+                    <field name="foundation"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_form_todo" model="ir.ui.view">
+        <field name="name">view.form.school</field>
+        <field name="model">school.module</field>
+        <field name="arch" type="xml">
+            <form>
+            <sheet>
+                <group>
+                    <field name="name" string="Nombre de la Escuela"/>
+                    <field name="adress" string="Direccion"/>
+                    <field name="director" string="Nombre del Director"/>
+                    <field name="students" string="Cantidad de estudiantes"/>
+                    <field name="foundation" string="Fundacion de la Escuela"/>
+                </group>
+            </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_view_todo" model="ir.actions.act_window">
+        <field name="name">Informacion de Escuelas</field>
+        <field name="res_model">school.module</field>
+        <field name="view_mode">tree,form</field> 
+    </record>
+
+    <menuitem id="menu_todo" parent="" action="schools_module.action_view_todo" />
+</odoo>

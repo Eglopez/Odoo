@@ -1,7 +1,7 @@
 from odoo import models,fields
 
 class School(models.Model):
-    _name = "school_module"
+    _name = "school.module"
 
     name = fields.Char()
     adress = fields.Char()

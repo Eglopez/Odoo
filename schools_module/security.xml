@@ -1,7 +1,7 @@
 <odoo>
-    <record id="model_Acces_school" model="ir.model.access">
+    <record id="model_acces_school" model="ir.model.access">
         <field name="name">model.access.school</field>
-        <field name="model_id" ref="schools-module.model_school_module"/>
+        <field name="model_id" ref="schools_module.model_school_module"/>
         <field name="group_id" ref="base.group_system"/>
         <field name="perm_read" eval="1"/>
         <field name="perm_write" eval="1"/>
